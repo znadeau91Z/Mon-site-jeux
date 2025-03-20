@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éditeur de Jeux</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.38.0/min/vs/loader.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="editor-container">
+            <select id="language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+            <div id="editor"></div>
+            <button id="run">Commencer</button>
+        </div>
+        <iframe id="preview"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
